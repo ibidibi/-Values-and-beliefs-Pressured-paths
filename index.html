@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressured Paths</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pressured Paths</h1>
+        <h2>Understanding the Impact of Parental Pressure on Youth</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interviews">Interviews</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Get Involved</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h3>About the Project</h3>
+            <p>This project explores the pressure parents place on their children to pursue specific academic paths, impacting their mental health and academic performance.</p>
+        </section>
+
+        <section id="interviews">
+            <h3>Voices of Experience</h3>
+            <div class="interview-grid">
+                <article class="interview" onclick="openModal('student1')">
+                    <h4>Student 1</h4>
+                    <p>Click to read more...</p>
+                </article>
+                <article class="interview" onclick="openModal('parent1')">
+                    <h4>Parent 1</h4>
+                    <p>Click to read more...</p>
+                </article>
+                <article class="interview" onclick="openModal('student2')">
+                    <h4>Student 2</h4>
+                    <p>Click to read more...</p>
+                </article>
+                <article class="interview" onclick="openModal('parent2')">
+                    <h4>Parent 2</h4>
+                    <p>Click to read more...</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h3>Resources</h3>
+            <p>Here are some tips for parents:</p>
+            <ul>
+                <li>Encourage open discussions about interests.</li>
+                <li>Support your child’s choices, even if they differ from yours.</li>
+                <li>Consider professional counseling if needed.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h3>Get Involved</h3>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formResponse" class="response"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pressured Paths. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h4 id="modalTitle"></h4>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
